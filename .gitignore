@@ -1,5 +1,5 @@
 # Project build
-dist/
+# dist/
 
 # Parcel cache
 .cache
