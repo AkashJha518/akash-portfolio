@@ -1,11 +1,10 @@
 {
-  "name": "Akashjha518",
+  "name": "akashjha518-PortFolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.2.11",
