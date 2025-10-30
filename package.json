@@ -1,11 +1,14 @@
 {
-  "name": "akashjha518-PortFolio",
+  "homepage": "https://AkashJha518.github.io/akash-portfolio/",
+  "name": "portfolio-website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

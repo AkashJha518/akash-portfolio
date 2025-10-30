@@ -9,7 +9,7 @@ export default defineConfig({
     glsl(), // Support GLSL files
     restart({ restart: ['../static/**'] }) // Restart server on static file change
   ],
-  base: '/PortFolio/', // 👈 Use your repo name here
+  base: '/akash-portfolio', // 👈 Use your repo name here
   root: 'src/', // Source files (where index.html is)
   publicDir: '../static/', // Static assets
   server: {
