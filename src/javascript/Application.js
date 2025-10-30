@@ -52,7 +52,7 @@ export default class Application
         window.addEventListener('touchstart', () =>
         {
             this.config.touch = true
-            // this.world.controls.setTouch()
+            this.world.controls.setTouch()
 
             this.passes.horizontalBlurPass.strength = 1
             this.passes.horizontalBlurPass.material.uniforms.uStrength.value = new THREE.Vector2(this.passes.horizontalBlurPass.strength, 0)
@@ -272,11 +272,11 @@ export default class Application
      */
     setThreejsJourney()
     {
-        this.threejsJourney = new ThreejsJourney({
-            config: this.config,
-            time: this.time,
-            world: this.world
-        })
+        // this.threejsJourney = new ThreejsJourney({
+        //     config: this.config,
+        //     time: this.time,
+        //     world: this.world
+        // })
     }
 
     /**

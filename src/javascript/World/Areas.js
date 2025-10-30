@@ -58,7 +58,7 @@ export default class Areas
             this.mouse.coordinates.y = - (_event.changedTouches[0].clientY / window.innerHeight) * 2 + 1
 
             this.mouse.needsUpdate = true
-        })
+        }, { passive: false });
 
         // Time tick event
         this.time.on('tick', () =>

@@ -138,7 +138,7 @@ export default class Camera
                 this.zoom.touch.startDistance = Math.hypot(_event.touches[0].clientX - _event.touches[1].clientX, _event.touches[0].clientX - _event.touches[1].clientX)
                 this.zoom.touch.startValue = this.zoom.targetValue
             }
-        })
+        }, { passive: false });
 
         this.renderer.domElement.addEventListener('touchmove', (_event) =>
         {
@@ -152,7 +152,7 @@ export default class Camera
                 this.zoom.targetValue = this.zoom.touch.startValue - (ratio - 1)
                 this.zoom.targetValue = Math.min(Math.max(this.zoom.targetValue, 0), 1)
             }
-        })
+        }, { passive: false });
 
         // Time tick event
         this.time.on('tick', () =>
@@ -288,7 +288,7 @@ export default class Camera
             {
                 this.pan.down(_event.touches[0].clientX, _event.touches[0].clientY)
             }
-        })
+        }, { passive: false });
 
         this.renderer.domElement.addEventListener('touchmove', (_event) =>
         {
@@ -296,7 +296,7 @@ export default class Camera
             {
                 this.pan.move(_event.touches[0].clientX, _event.touches[0].clientY)
             }
-        })
+        }, { passive: false });
 
         this.renderer.domElement.addEventListener('touchend', () =>
         {

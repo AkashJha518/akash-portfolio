@@ -40,7 +40,7 @@ export default class Materials {
         this.shades = {}
         this.shades.items = {}
         // this.shades.indirectColor = '#d04500'
-        this.shades.indirectColor = '#6193bcff';
+        this.shades.indirectColor = '#6193bc';
 
         this.shades.uniforms = {
             uRevealProgress: 0,
