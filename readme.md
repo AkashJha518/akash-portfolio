@@ -1,5 +1,5 @@
 # PortFolio
-<a href="https://AkashJha518.github.io/akash-portfolio/">Click to see</a>
+<a target="/blank" href="https://AkashJha518.github.io/akash-portfolio/">Click to see</a>
 
 
 ## Setup
